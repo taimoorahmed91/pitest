@@ -1,0 +1,106 @@
+output starts here
+7
+3
+on
+7
+off
+3
+off
+1
+off
+10
+on
+9
+on
+8
+on
+1
+on
+2
+on
+3
+on
+4
+on
+5
+on
+6
+on
+7
+on
+6
+off
+5
+off
+4
+off
+3
+off
+2
+off
+1
+off
+5
+on
+5
+off
+5
+on
+5
+off
+3
+on
+7
+off
+8
+off
+9
+off
+10
+off
+7
+on
+5
+on
+2 was ON
+2 was OFF
+5 was OFF
+7 was OFF
+3 was OFF
+1 (GPIO 2) was turned ON
+1 (GPIO 2) was turned OFF
+4 (GPIO ) was turned ON
+4 (GPIO ) was turned OFF
+4 (GPIO ) was turned ON
+4 (GPIO ) was turned OFF
+2 (GPIO ) was turned OFF
+2 (GPIO ) was turned ON
+1 (GPIO 2) was turned OFF
+1 (GPIO ) was turned ON
+2 (GPIO ) was turned OFF
+2 (GPIO ) was turned ON
+2 (GPIO undefined) was turned OFF
+7 (GPIO undefined) was turned ON
+8 (GPIO undefined) was turned ON
+7 (GPIO undefined) was turned OFF
+1 (GPIO undefined) was turned OFF
+1 (GPIO undefined) was turned ON
+1 (GPIO undefined) was turned OFF
+4 (GPIO undefined) was turned OFF
+7 (GPIO undefined) was turned ON
+3 (GPIO undefined) was turned ON
+2 (GPIO 2) was turned ON
+10 (GPIO 2) was turned ON
+10 (GPIO 2) was turned OFF
+22 (GPIO 2) was turned ON
+22 (GPIO 2) was turned OFF
+22 (GPIO 2) was turned ON
+22 (GPIO 2) was turned OFF
+1 (GPIO 2) was turned ON
+2 (GPIO 2) was turned OFF
+101 (GPIO 2) was turned OFF
+10 (GPIO 2) was turned ON
+10 (GPIO 2) was turned OFF
+3 (GPIO 2) was turned OFF
+7 (GPIO 2) was turned OFF
+8 (GPIO 2) was turned OFF

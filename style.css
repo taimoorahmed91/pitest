@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('elegant.png') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+.glow-button {
+    border: none;
+    outline: none;
+    color: #FFF5EE; /* Soft off-white color for text */
+    padding: 30px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    /* Royal red gradient inspired by Turkish art */
+    background-image: linear-gradient(145deg, #a00000, #e60000);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff5ee; /* Subtle border for definition */
+    position: relative; /* Required for pseudo-elements */
+}
+
+.glow-button::before, .glow-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(145deg, transparent, rgba(255,255,255,0.3));
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+.glow-button:hover::before {
+    opacity: 1;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px #a00000;
+}
+
+.glow-button:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 15px #a00000 inset;
+}
+
+/* Additional styling can be added to enhance the Turkish art theme */
+
