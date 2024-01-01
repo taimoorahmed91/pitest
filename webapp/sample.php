@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;url=sample.php"> <!-- Page redirects to weather.php after 60 seconds -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5;url=sample.php">
     <title>Device Control Panel</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -52,10 +52,48 @@
                 ?>
             </div>
         </div>
-        <div class="box" id="box2">
-            <h1 class="heading">Additional Controls</h1>
-            <!-- Additional content for other controls can be added here -->
-        </div>
+
+
+
+<div class="box" id="box2">
+    <h1 class="heading">Button Controls</h1>
+    <div class="button-controls">
+        <?php 
+        // Creating a new connection for Box 2
+        $conn2 = new mysqli($host, $username, $password, $database);
+
+        // Check connection
+        if ($conn2->connect_error) {
+            die("Connection failed: " . $conn2->connect_error);
+        }
+
+        // Fetch button status from the database
+        $sqlButtons = "SELECT id, device, status FROM buttons";
+        $resultButtons = $conn2->query($sqlButtons);
+
+        if ($resultButtons->num_rows > 0) {
+            while($row = $resultButtons->fetch_assoc()) {
+                $buttonColor = ($row["status"] == "on") ? "green" : "red";
+                echo '<div class="button-device">
+                        <span>'. htmlspecialchars($row["device"]) .':</span>
+                        <button style="background-color: '. $buttonColor .';">'. ucfirst($row["status"]) .'</button>
+                      </div>';
+            }
+        } else {
+            echo "0 results in buttons";
+        }
+
+        // Close the second connection
+        $conn2->close();
+        ?>
+    </div>
+</div>
+
+
+
+
+
+
     </div>
 
 <script>

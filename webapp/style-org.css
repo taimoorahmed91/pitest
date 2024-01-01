@@ -35,15 +35,6 @@ body {
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    .box {
-        min-height: 100px;
-    }
-}
-
 .device-controls {
     display: flex;
     flex-direction: column;
@@ -63,52 +54,52 @@ body {
 
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 74px; /* Increased width of the switch */
-  height: 34px; /* Height of the switch */
+    position: relative;
+    display: inline-block;
+    width: 74px; /* Increased width of the switch */
+    height: 34px; /* Height of the switch */
 }
 
 /* The slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #cc0000; /* Red background color for OFF */
-  transition: .4s;
-  border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cc0000; /* Red background color for OFF */
+    transition: .4s;
+    border-radius: 34px;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px; /* Height of the knob */
-  width: 26px; /* Width of the knob */
-  left: 4px; /* Positioned from the left to align within the switch */
-  bottom: 4px; /* Positioned from the bottom to center vertically */
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px; /* Height of the knob */
+    width: 26px; /* Width of the knob */
+    left: 4px; /* Positioned from the left to align within the switch */
+    bottom: 4px; /* Positioned from the bottom to center vertically */
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #00cc00; /* Green background color for ON */
+    background-color: #00cc00; /* Green background color for ON */
 }
 
 input:checked + .slider:before {
-  /* No translateX, just position the knob on the right */
-  left: 44px; /* Position the knob to the right within the switch */
+    /* No translateX, just position the knob on the right */
+    left: 44px; /* Position the knob to the right within the switch */
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 

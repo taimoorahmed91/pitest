@@ -15,12 +15,13 @@ if __name__ == "__main__":
         write_args_to_file(sys.argv[1:])
 
         if status == "on":
-            # Run on_script.py with device_id and gpio as arguments with user taimoor privileges
+            # Run on_script.py with device_id and gpio as arguments
             subprocess.run(["python3", "on_script.py", device_id, gpio])
         elif status == "off":
-            # Run off_script.py with device_id and gpio as arguments with user taimoor privileges
+            # Run off_script.py with device_id and gpio as arguments
             subprocess.run(["python3", "off_script.py", device_id, gpio])
         else:
             print("Invalid status argument. Please use 'on' or 'off'.")
     else:
         print("Please provide exactly three arguments.")
+

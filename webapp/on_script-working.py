@@ -11,7 +11,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 3:
         device_name = sys.argv[1]
         gpio = sys.argv[2]
-        message = f"{device_name} (GPIO {gpio}) was turned OFF"
+        message = f"{device_name} (GPIO {gpio}) was turned ON"
         append_to_file('output.txt', message)
     else:
         print("Please provide exactly two arguments: device name and GPIO.")

@@ -103,3 +103,25 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+.button-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button-device {
+    margin: 10px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-device button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
