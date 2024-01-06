@@ -36,4 +36,4 @@ if __name__ == "__main__":
         print("Please provide exactly two arguments: device name and GPIO.")
     
     # Clean up GPIO at the end of the script
-    GPIO.cleanup()
+   # GPIO.cleanup()

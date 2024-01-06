@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /webapp/
+RewriteRule ^devices$ get_devices.php [NC,L]
